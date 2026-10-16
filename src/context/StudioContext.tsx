@@ -99,6 +99,10 @@ interface StudioContextType {
   createProject: (project: Partial<Project>) => Promise<Project>;
   updateProject: (id: string, updates: Partial<Project>) => Promise<Project | null>;
   deleteProject: (id: string) => Promise<void>;
+  deleteProposal: (id: string) => Promise<void>;
+  deleteInvoice: (id: string) => Promise<void>;
+  deleteAgreement: (id: string) => Promise<void>;
+  deleteBriefForm: (id: string) => Promise<void>;
   updateProjectStage: (id: string, stageIndex: number, isCompleted: boolean) => Promise<void>;
   createProposal: (proposal: Partial<Proposal>) => Promise<Proposal>;
   updateProposal: (id: string, updates: Partial<Proposal>) => Promise<Proposal | null>;
