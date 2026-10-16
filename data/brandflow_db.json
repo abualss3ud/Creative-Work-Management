@@ -1,0 +1,1474 @@
+{
+  "settings": {
+    "studioName": "محمد أبو السعود | تصميم واستراتيجية الهويات البصرية",
+    "studioNameEn": "Mohamed Abu Al-Saud — Brand Identity & Strategy",
+    "tagline": "تصميم واستراتيجية هويات بصرية وعلامات تجارية تصنع الأثر",
+    "taglineEn": "Strategic & Distinctive Brand Identity Design by Mohamed Abu Al-Saud",
+    "ownerName": "محمد أبو السعود",
+    "email": "abualss3ud@gmail.com",
+    "phone": "+966 50 123 4567",
+    "address": "المملكة العربية السعودية",
+    "taxNumber": "310987654300003",
+    "crNumber": "1010892341",
+    "defaultCurrency": "SAR",
+    "defaultTaxRate": 15,
+    "defaultRevisionsCount": 3,
+    "defaultPaymentTerms": "عربون 50% عند التعاقد وبدء العمل، و50% عند اعتماد وتسليم ملفات الهوية النهائية",
+    "bankDetails": {
+      "bankName": "مصرف الراجحي / البنك الأهلي السعودي",
+      "accountName": "محمد أبو السعود (Mohamed Abu Al-Saud)",
+      "iban": "SA4480000123608010123456",
+      "swift": "RJHISARI"
+    },
+    "language": "ar"
+  },
+  "clients": [
+    {
+      "id": "client-1",
+      "name": "عبدالله السبيعي",
+      "company": "محامص قِمة المختصة (Qimmah Roastery)",
+      "email": "ceo@qimmahcoffee.com",
+      "phone": "+966 55 987 6543",
+      "country": "المملكة العربية السعودية",
+      "industry": "الأغذية والمشروبات / الضيافة",
+      "source": "توصية عميل سابق",
+      "status": "active",
+      "internalNotes": "العميل يمتلك فرعين في الرياض والدمام ويرغب في إطلاق هوية جديدة متكاملة تمهيداً للتوسع بنظام الفرنشايز.",
+      "createdAt": "2026-09-10T10:00:00Z",
+      "updatedAt": "2026-10-12T14:30:00Z"
+    },
+    {
+      "id": "client-2",
+      "name": "نورة العتيبي",
+      "company": "دار أوريليا للأزياء (Aurélia Atelier)",
+      "email": "noura@aurelia.sa",
+      "phone": "+966 54 321 0987",
+      "country": "المملكة العربية السعودية",
+      "industry": "الأزياء الفاخرة والعطور",
+      "source": "Instagram / Portfolio",
+      "status": "active",
+      "internalNotes": "براند أزياء نسائية راقية بتصميم مينيمال وجمالي فرنسي-عربي. ميزانية مرتفعة وتقدير كبير للتفاصيل الطباعية.",
+      "createdAt": "2026-09-20T11:15:00Z",
+      "updatedAt": "2026-10-14T09:20:00Z"
+    },
+    {
+      "id": "client-3",
+      "name": "المهندس كريم الشريف",
+      "company": "منصة زوايا للتقنية العقارية (Zawaya PropTech)",
+      "email": "karim@zawaya.io",
+      "phone": "+966 50 443 2190",
+      "country": "الإمارات العربية المتحدة / السعودية",
+      "industry": "التكنولوجيا العقارية والـ SaaS",
+      "source": "LinkedIn",
+      "status": "negotiating",
+      "internalNotes": "تم إرسال عرض سعر متكامل لتطوير هوية التطبيق وتصميم نظام الأيقونات ولوحة المؤشرات. بانتظار الموافقة.",
+      "createdAt": "2026-10-02T13:40:00Z",
+      "updatedAt": "2026-10-15T16:00:00Z"
+    },
+    {
+      "id": "client-4",
+      "name": "د. طارق الحامد",
+      "company": "مجموعة نمو للاستشارات الاستثمارية",
+      "email": "t.hamed@numo-advisory.com",
+      "phone": "+966 56 778 8990",
+      "country": "المملكة العربية السعودية",
+      "industry": "الخدمات المالية والاستثمار",
+      "source": "مؤتمر الأعمال الإبداعي",
+      "status": "lead",
+      "internalNotes": "تواصل أولي بخصوص إعادة بناء العلامة التجارية للشركة القابضة.",
+      "createdAt": "2026-10-14T08:00:00Z",
+      "updatedAt": "2026-10-14T08:00:00Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "clientId": "client-1",
+      "name": "تطوير الهوية البصرية الشاملة لمحامص قِمة",
+      "serviceType": "هوية بصرية متكاملة وتغليف",
+      "description": "إعادة بناء الهوية البصرية لمحامص وكافيهات قِمة، تشمل الشعار، البالتة اللونية، أكياس القهوة، الأكواب، وأدلة الفروع.",
+      "startDate": "2026-09-15",
+      "targetDate": "2026-11-10",
+      "budget": 38000,
+      "currency": "SAR",
+      "status": "concept_design",
+      "progressPercentage": 58,
+      "currentStageIndex": 5,
+      "stages": [
+        {
+          "name": "استقبال الطلب",
+          "nameEn": "Request Intake",
+          "order": 1,
+          "isCompleted": true,
+          "requiresClientApproval": false,
+          "description": "التواصل الأولي وتحديد متطلبات المشروع",
+          "id": "stage-1",
+          "completedAt": "2026-10-05T12:00:00Z"
+        },
+        {
+          "name": "جمع البريف",
+          "nameEn": "Brief Collection",
+          "order": 2,
+          "isCompleted": true,
+          "requiresClientApproval": true,
+          "description": "استلام نموذج البريف وتوثيق أهداف العلامة",
+          "id": "stage-2",
+          "completedAt": "2026-10-05T12:00:00Z"
+        },
+        {
+          "name": "البحث وتحليل المنافسين",
+          "nameEn": "Research & Competitor Audit",
+          "order": 3,
+          "isCompleted": true,
+          "requiresClientApproval": false,
+          "description": "دراسة السوق ومقارنة المنافسين واستخراج الأنماط",
+          "id": "stage-3",
+          "completedAt": "2026-10-05T12:00:00Z"
+        },
+        {
+          "name": "بناء الاستراتيجية",
+          "nameEn": "Brand Strategy Formulation",
+          "order": 4,
+          "isCompleted": true,
+          "requiresClientApproval": true,
+          "description": "صياغة التموضع، شخصية العلامة، والقيمة الجوهرية",
+          "id": "stage-4",
+          "completedAt": "2026-10-05T12:00:00Z"
+        },
+        {
+          "name": "إعداد Moodboard",
+          "nameEn": "Moodboard & Visual Direction",
+          "order": 5,
+          "isCompleted": true,
+          "requiresClientApproval": true,
+          "description": "تحديد الاتجاهات البصرية والألوان والخطوط التمهيدية",
+          "id": "stage-5",
+          "completedAt": "2026-10-05T12:00:00Z"
+        },
+        {
+          "name": "تطوير الاتجاهات البصرية",
+          "nameEn": "Design Concepts Exploration",
+          "order": 6,
+          "isCompleted": false,
+          "requiresClientApproval": false,
+          "description": "تطوير مفاهيم الشعار والتطبيقات الأولية",
+          "id": "stage-6"
+        },
+        {
+          "name": "تصميم الشعار والهوية",
+          "nameEn": "Logo & Identity Design",
+          "order": 7,
+          "isCompleted": false,
+          "requiresClientApproval": false,
+          "description": "إتقان المنظومة البصرية والخطوط والأنماط",
+          "id": "stage-7"
+        },
+        {
+          "name": "عرض التصميم على العميل",
+          "nameEn": "Client Presentation",
+          "order": 8,
+          "isCompleted": false,
+          "requiresClientApproval": true,
+          "description": "تقديم العرض التقديمي الشامل للعلامة",
+          "id": "stage-8"
+        },
+        {
+          "name": "تنفيذ التعديلات",
+          "nameEn": "Revisions Implementation",
+          "order": 9,
+          "isCompleted": false,
+          "requiresClientApproval": true,
+          "description": "تنفيذ جولات التعديل المتفق عليها",
+          "id": "stage-9"
+        },
+        {
+          "name": "إعداد دليل الهوية",
+          "nameEn": "Brand Guidelines Manual",
+          "order": 10,
+          "isCompleted": false,
+          "requiresClientApproval": false,
+          "description": "توثيق قواعد استخدام الشعار والألوان والخطوط",
+          "id": "stage-10"
+        },
+        {
+          "name": "تجهيز ملفات التسليم",
+          "nameEn": "Deliverables Preparation",
+          "order": 11,
+          "isCompleted": false,
+          "requiresClientApproval": false,
+          "description": "تصدير الملفات المصدرية والطباعية والرقمية",
+          "id": "stage-11"
+        },
+        {
+          "name": "إغلاق المشروع",
+          "nameEn": "Project Handover & Closeout",
+          "order": 12,
+          "isCompleted": false,
+          "requiresClientApproval": true,
+          "description": "تسليم الأصول النهائية والموافقة الختامية",
+          "id": "stage-12"
+        }
+      ],
+      "revisionsAllowed": 2,
+      "revisionsUsed": 0,
+      "proposalId": "prop-1",
+      "agreementId": "agr-1",
+      "invoiceIds": [
+        "inv-1",
+        "inv-2"
+      ],
+      "briefFormId": "brief-1",
+      "briefSubmissionId": "sub-1",
+      "shareToken": "token-qimmah-789a",
+      "createdAt": "2026-09-15T09:00:00Z",
+      "updatedAt": "2026-10-15T11:00:00Z"
+    },
+    {
+      "id": "proj-2",
+      "clientId": "client-2",
+      "name": "بناء العلامة التجارية لدار أوريليا للأزياء",
+      "serviceType": "هوية فاخرة ودليل استخدام",
+      "description": "تصميم الشعار اللاتيني والعربي للعلامة التجارية الفاخرة، مع كروت الضيافة وأكياس القماش وحزام التغليف.",
+      "startDate": "2026-09-25",
+      "targetDate": "2026-11-28",
+      "budget": 45000,
+      "currency": "SAR",
+      "status": "moodboard",
+      "progressPercentage": 42,
+      "currentStageIndex": 4,
+      "stages": [
+        {
+          "name": "استقبال الطلب",
+          "nameEn": "Request Intake",
+          "order": 1,
+          "isCompleted": true,
+          "requiresClientApproval": false,
+          "description": "التواصل الأولي وتحديد متطلبات المشروع",
+          "id": "stage-1",
+          "completedAt": "2026-10-10T15:00:00Z"
+        },
+        {
+          "name": "جمع البريف",
+          "nameEn": "Brief Collection",
+          "order": 2,
+          "isCompleted": true,
+          "requiresClientApproval": true,
+          "description": "استلام نموذج البريف وتوثيق أهداف العلامة",
+          "id": "stage-2",
+          "completedAt": "2026-10-10T15:00:00Z"
+        },
+        {
+          "name": "البحث وتحليل المنافسين",
+          "nameEn": "Research & Competitor Audit",
+          "order": 3,
+          "isCompleted": true,
+          "requiresClientApproval": false,
+          "description": "دراسة السوق ومقارنة المنافسين واستخراج الأنماط",
+          "id": "stage-3",
+          "completedAt": "2026-10-10T15:00:00Z"
+        },
+        {
+          "name": "بناء الاستراتيجية",
+          "nameEn": "Brand Strategy Formulation",
+          "order": 4,
+          "isCompleted": true,
+          "requiresClientApproval": true,
+          "description": "صياغة التموضع، شخصية العلامة، والقيمة الجوهرية",
+          "id": "stage-4",
+          "completedAt": "2026-10-10T15:00:00Z"
+        },
+        {
+          "name": "إعداد Moodboard",
+          "nameEn": "Moodboard & Visual Direction",
+          "order": 5,
+          "isCompleted": false,
+          "requiresClientApproval": true,
+          "description": "تحديد الاتجاهات البصرية والألوان والخطوط التمهيدية",
+          "id": "stage-5"
+        },
+        {
+          "name": "تطوير الاتجاهات البصرية",
+          "nameEn": "Design Concepts Exploration",
+          "order": 6,
+          "isCompleted": false,
+          "requiresClientApproval": false,
+          "description": "تطوير مفاهيم الشعار والتطبيقات الأولية",
+          "id": "stage-6"
+        },
+        {
+          "name": "تصميم الشعار والهوية",
+          "nameEn": "Logo & Identity Design",
+          "order": 7,
+          "isCompleted": false,
+          "requiresClientApproval": false,
+          "description": "إتقان المنظومة البصرية والخطوط والأنماط",
+          "id": "stage-7"
+        },
+        {
+          "name": "عرض التصميم على العميل",
+          "nameEn": "Client Presentation",
+          "order": 8,
+          "isCompleted": false,
+          "requiresClientApproval": true,
+          "description": "تقديم العرض التقديمي الشامل للعلامة",
+          "id": "stage-8"
+        },
+        {
+          "name": "تنفيذ التعديلات",
+          "nameEn": "Revisions Implementation",
+          "order": 9,
+          "isCompleted": false,
+          "requiresClientApproval": true,
+          "description": "تنفيذ جولات التعديل المتفق عليها",
+          "id": "stage-9"
+        },
+        {
+          "name": "إعداد دليل الهوية",
+          "nameEn": "Brand Guidelines Manual",
+          "order": 10,
+          "isCompleted": false,
+          "requiresClientApproval": false,
+          "description": "توثيق قواعد استخدام الشعار والألوان والخطوط",
+          "id": "stage-10"
+        },
+        {
+          "name": "تجهيز ملفات التسليم",
+          "nameEn": "Deliverables Preparation",
+          "order": 11,
+          "isCompleted": false,
+          "requiresClientApproval": false,
+          "description": "تصدير الملفات المصدرية والطباعية والرقمية",
+          "id": "stage-11"
+        },
+        {
+          "name": "إغلاق المشروع",
+          "nameEn": "Project Handover & Closeout",
+          "order": 12,
+          "isCompleted": false,
+          "requiresClientApproval": true,
+          "description": "تسليم الأصول النهائية والموافقة الختامية",
+          "id": "stage-12"
+        }
+      ],
+      "revisionsAllowed": 3,
+      "revisionsUsed": 0,
+      "proposalId": "prop-2",
+      "agreementId": "agr-2",
+      "invoiceIds": [
+        "inv-3"
+      ],
+      "briefFormId": "brief-2",
+      "briefSubmissionId": "sub-2",
+      "shareToken": "token-aurelia-452f",
+      "createdAt": "2026-09-25T10:30:00Z",
+      "updatedAt": "2026-10-14T17:00:00Z"
+    }
+  ],
+  "proposals": [
+    {
+      "id": "prop-1",
+      "quoteNumber": "QUO-2026-0041",
+      "clientId": "client-1",
+      "projectId": "proj-1",
+      "title": "عرض سعر بناء الهوية البصرية والتغليف لمحامص قِمة",
+      "issueDate": "2026-09-12",
+      "expiryDate": "2026-10-12",
+      "currency": "SAR",
+      "items": [
+        {
+          "id": "item-1",
+          "serviceName": "البحث الاستراتيجي ودراسة المنافسين",
+          "description": "تحليل المنافسين في قطاع المقاهي المختصة وتحديد موقع العلامة ومحاور التمايز البصري.",
+          "deliverablesSummary": "ملف تقرير البحث الاستراتيجي (PDF)",
+          "quantity": 1,
+          "unitPrice": 8000,
+          "total": 8000
+        },
+        {
+          "id": "item-2",
+          "serviceName": "تصميم الشعار والمنظومة البصرية",
+          "description": "تطوير 3 اتجاهات إبداعية للشعار، والخطوط، والبالتة اللونية، مع تقديم النماذج التطبيقية.",
+          "deliverablesSummary": "ملفات الشعار، الخطوط، الأنماط البصرية",
+          "quantity": 1,
+          "unitPrice": 16000,
+          "total": 16000
+        },
+        {
+          "id": "item-3",
+          "serviceName": "تصميم عبوات التغليف والأدوات الملموسة",
+          "description": "تصميم أكياس القهوة بحجمين (250g / 1kg)، أكواب ورقية، ليبل، وشريط التغليف.",
+          "deliverablesSummary": "ملفات Dielines جاهزة للطباعة مع توصيف المواد",
+          "quantity": 1,
+          "unitPrice": 9000,
+          "total": 9000
+        },
+        {
+          "id": "item-4",
+          "serviceName": "دليل الهوية البصرية الشامل (Brand Book)",
+          "description": "كتاب الهوية البصرية الشامل يوثق قواعد الاستخدام والقياسات والممنوعات.",
+          "deliverablesSummary": "نسخة رقمية تفاعلية + نسخة طباعة عالية الجودة",
+          "quantity": 1,
+          "unitPrice": 5000,
+          "total": 5000
+        }
+      ],
+      "subtotal": 38000,
+      "discountAmount": 0,
+      "taxRate": 15,
+      "taxAmount": 5700,
+      "totalAmount": 43700,
+      "paymentSchedule": [
+        {
+          "id": "sched-1",
+          "milestoneTitle": "عربون البدء وتأكيد الحجز (50%)",
+          "percentage": 50,
+          "amount": 21850,
+          "dueDateDescription": "عند توقيع الاتفاقية وبدء المشروع",
+          "isInvoiceIssued": true
+        },
+        {
+          "id": "sched-2",
+          "milestoneTitle": "الدفعة الثانية عند اعتماد الاتجاه البصري (25%)",
+          "percentage": 25,
+          "amount": 10925,
+          "dueDateDescription": "عقب اعتماد أحد الاتجاهات المعروضة في المودبورد والشعار",
+          "isInvoiceIssued": true
+        },
+        {
+          "id": "sched-3",
+          "milestoneTitle": "الدفعة النهائية قبل تسليم الأصول المصدرية (25%)",
+          "percentage": 25,
+          "amount": 10925,
+          "dueDateDescription": "قبل تسليم ملفات المتجهات ودليل الهوية المفتوح",
+          "isInvoiceIssued": false
+        }
+      ],
+      "revisionsPolicy": "يشمل العرض جولتي تعديل تفصيليتين على الاتجاه المعتمد. أي جولات إضافية أو تغيير جوهري في البريف تُحسب كبند منفصل.",
+      "estimatedTimelineWeeks": 7,
+      "terms": "العرض ساري لمدة 30 يوماً من تاريخ إصداره. الدفعات تتم عبر التحويل البنكي لحساب الاستوديو المعتمد.",
+      "status": "accepted",
+      "shareToken": "quo-share-qimmah-8812",
+      "acceptedAt": "2026-09-14T11:20:00Z",
+      "acceptedByName": "عبدالله السبيعي",
+      "createdAt": "2026-09-12T10:00:00Z"
+    },
+    {
+      "id": "prop-2",
+      "quoteNumber": "QUO-2026-0042",
+      "clientId": "client-2",
+      "projectId": "proj-2",
+      "title": "عرض تصميم هوية دار أوريليا للأزياء الراقية",
+      "issueDate": "2026-09-22",
+      "expiryDate": "2026-10-22",
+      "currency": "SAR",
+      "items": [
+        {
+          "id": "item-201",
+          "serviceName": "استراتيجية العلامة الفاخرة والتموضع البصري",
+          "description": "بناء استراتيجية الهوية لدار الأزياء مع Moodboard تفاعلي واختبار الخطوط الطباعية.",
+          "deliverablesSummary": "Brand Strategy & Moodboard Deck",
+          "quantity": 1,
+          "unitPrice": 12000,
+          "total": 12000
+        },
+        {
+          "id": "item-202",
+          "serviceName": "تصميم الشعار الثنائي (عربي / لاتيني) ونظام التايبوغرافي",
+          "description": "رسم التايبوغرافي المخصص وشعار الأونوغرام مع دراسة تطبيق الحفر والذهب على القماش.",
+          "deliverablesSummary": "Vector Master Files & Type System",
+          "quantity": 1,
+          "unitPrice": 20000,
+          "total": 20000
+        },
+        {
+          "id": "item-203",
+          "serviceName": "منظومة التغليف الفاخر وبطاقات الهوية",
+          "description": "تصميم كروت الأسعار الفاخرة، أكياس القماش، أشرطة الحرير، والبوكس الفاخر.",
+          "deliverablesSummary": "Dieline Master Files & Spec Sheet",
+          "quantity": 1,
+          "unitPrice": 13000,
+          "total": 13000
+        }
+      ],
+      "subtotal": 45000,
+      "discountAmount": 0,
+      "taxRate": 15,
+      "taxAmount": 6750,
+      "totalAmount": 51750,
+      "paymentSchedule": [
+        {
+          "id": "sched-201",
+          "milestoneTitle": "عربون البدء (50%)",
+          "percentage": 50,
+          "amount": 25875,
+          "dueDateDescription": "عند توقيع العقد",
+          "isInvoiceIssued": true
+        },
+        {
+          "id": "sched-202",
+          "milestoneTitle": "الدفعة الختامية (50%)",
+          "percentage": 50,
+          "amount": 25875,
+          "dueDateDescription": "عند الاعتماد النهائي للأصول",
+          "isInvoiceIssued": false
+        }
+      ],
+      "revisionsPolicy": "يشمل العرض 3 جولات تعديل مدروسة لضمان الوصول لأعلى مستويات الفخامة.",
+      "estimatedTimelineWeeks": 8,
+      "terms": "تلتزم الدار بتوفير الملاحظات خلال 5 أيام عمل من استلام كل مرحلة لضمان الالتزام بالجدول الزمني.",
+      "status": "accepted",
+      "shareToken": "quo-share-aurelia-3390",
+      "acceptedAt": "2026-09-24T16:45:00Z",
+      "acceptedByName": "نورة العتيبي",
+      "createdAt": "2026-09-22T14:00:00Z"
+    },
+    {
+      "id": "prop-3",
+      "quoteNumber": "QUO-2026-0043",
+      "clientId": "client-3",
+      "title": "عرض تصميم هوية منصة زوايا للتقنية العقارية",
+      "issueDate": "2026-10-04",
+      "expiryDate": "2026-11-04",
+      "currency": "SAR",
+      "items": [
+        {
+          "id": "item-301",
+          "serviceName": "تصميم هوية المنتج الرقمي والشعار",
+          "description": "ابتكار شعار تقني هندسي وتطوير مكتبة الأيقونات والبالتة اللونية لواجهة المستخدم.",
+          "deliverablesSummary": "Figma Token Library & Logo Vectors",
+          "quantity": 1,
+          "unitPrice": 28000,
+          "total": 28000
+        },
+        {
+          "id": "item-302",
+          "serviceName": "دليل تصميم الواجهات والتسويق الرقمي",
+          "description": "قوالب التواصل الاجتماعي، عروض المستثمرين، ودليل العلامة الرقمي.",
+          "deliverablesSummary": "Pitch Deck & Guidelines",
+          "quantity": 1,
+          "unitPrice": 14000,
+          "total": 14000
+        }
+      ],
+      "subtotal": 42000,
+      "discountAmount": 2000,
+      "taxRate": 15,
+      "taxAmount": 6000,
+      "totalAmount": 46000,
+      "paymentSchedule": [
+        {
+          "id": "sched-301",
+          "milestoneTitle": "العربون (50%)",
+          "percentage": 50,
+          "amount": 23000,
+          "dueDateDescription": "عند التوقيع",
+          "isInvoiceIssued": false
+        },
+        {
+          "id": "sched-302",
+          "milestoneTitle": "الدفعة الثانية (50%)",
+          "percentage": 50,
+          "amount": 23000,
+          "dueDateDescription": "عند التسليم",
+          "isInvoiceIssued": false
+        }
+      ],
+      "revisionsPolicy": "جولتان من المراجعات المنهجية.",
+      "estimatedTimelineWeeks": 6,
+      "terms": "تسليم الملفات الرقمية بصيغ Figma وSVG وPDF المتجهية.",
+      "status": "sent",
+      "shareToken": "quo-share-zawaya-9914",
+      "createdAt": "2026-10-04T09:30:00Z"
+    }
+  ],
+  "agreements": [
+    {
+      "id": "agr-1",
+      "agreementNumber": "AGR-2026-0018",
+      "proposalId": "prop-1",
+      "clientId": "client-1",
+      "projectId": "proj-1",
+      "title": "اتفاقية تطوير الهوية البصرية والتغليف لمحامص قِمة",
+      "scopeOfWork": "يقوم الاستوديو بتنفيذ البحث الاستراتيجي، ابتكار الشعار والمنظومة البصرية، تصميم خط التغليف والأدوات المطبوعة، وإعداد دليل الهوية.",
+      "deliverablesList": [
+        "ملف تقرير البحث الاستراتيجي والمنافسين",
+        "الشعار الرئيسي والفرعي بصيغ AI, EPS, SVG, PNG",
+        "تصميم ديلاين أكياس القهوة (250g / 1kg) ومواصفات خامات الطباعة",
+        "تصاميم الأكواب الورقية وشريط التغليف والملصقات",
+        "دليل الهوية البصرية (Brand Guidelines PDF)"
+      ],
+      "timeline": "7 أسابيع عمل تبدأ من تاريخ استلام العربون ونموذج البريف المكتمل.",
+      "compensationTerms": "إجمالي المقابل المالي 43,700 ريال سعودي شامل ضريبة القيمة المضافة.",
+      "paymentMilestones": "50% دفعة أولى عند التعاقد، 25% عند اعتماد الاتجاه البصري، 25% قبل التسليم النهائي.",
+      "revisionsAndAlterations": "يتضمن المشروع جولتي تعديل. لا تشمل التعديلات طلب اتجاهات بصرية جديدة بعد اعتماد أحد المسارات.",
+      "approvalMechanism": "تعتبر كل مرحلة معتمدة فور إرسال العميل موافقة كتابية عبر البوابة أو البريد الإلكتروني المعتمد.",
+      "cancellationAndPostponement": "في حال إلغاء المشروع من طرف العميل بعد بدء العمل، لا يسترد العربون، وتُدفع مستحقات المراحل المنجزة.",
+      "intellectualPropertyRights": "تنتقل ملكية الهوية البصرية المعتمدة بالكامل للعميل فور سداد كامل الأتعاب. يحتفظ الاستوديو بحق عرض العمل في محفظة الأعمال والمسابقات الإبداعية.",
+      "status": "signed",
+      "signedAt": "2026-09-14T11:30:00Z",
+      "signeeName": "عبدالله السبيعي (الرئيس التنفيذي)",
+      "shareToken": "agr-share-qimmah-7711",
+      "createdAt": "2026-09-14T09:00:00Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "inv-1",
+      "invoiceNumber": "INV-2026-0082",
+      "clientId": "client-1",
+      "projectId": "proj-1",
+      "proposalId": "prop-1",
+      "type": "deposit",
+      "title": "فاتورة الدفعة الأولى (عربون 50%) - هوية محامص قِمة",
+      "issueDate": "2026-09-14",
+      "dueDate": "2026-09-21",
+      "currency": "SAR",
+      "items": [
+        {
+          "id": "inv-item-1",
+          "description": "دفعة أولى (50%) لتصميم وتطوير الهوية البصرية وفق العرض QUO-2026-0041",
+          "amount": 19000
+        }
+      ],
+      "subtotal": 19000,
+      "taxRate": 15,
+      "taxAmount": 2850,
+      "totalAmount": 21850,
+      "paidAmount": 21850,
+      "balanceDue": 0,
+      "status": "paid",
+      "payments": [
+        {
+          "id": "pay-1",
+          "invoiceId": "inv-1",
+          "amount": 21850,
+          "paymentDate": "2026-09-15",
+          "paymentMethod": "bank_transfer",
+          "transactionReference": "TRX-ALRAJHI-998241",
+          "notes": "تم استلام الحوالة كاملة على حساب مصرف الراجحي وتأكيد الإيصال.",
+          "recordedAt": "2026-09-15T10:15:00Z"
+        }
+      ],
+      "notes": "شكراً لتعاملكم معنا. تم قيد العربون وبدء مرحلة البحث والاستراتيجية.",
+      "paymentInstructions": "التحويل لحساب مؤسسة مدار للتصميم الإبداعي - آيبان SA4480000123608010123456",
+      "shareToken": "inv-share-qimmah-0082",
+      "createdAt": "2026-09-14T12:00:00Z"
+    },
+    {
+      "id": "inv-2",
+      "invoiceNumber": "INV-2026-0083",
+      "clientId": "client-1",
+      "projectId": "proj-1",
+      "proposalId": "prop-1",
+      "type": "milestone",
+      "title": "فاتورة الدفعة الثانية (25%) - اعتماد الاتجاه البصري",
+      "issueDate": "2026-10-10",
+      "dueDate": "2026-10-24",
+      "currency": "SAR",
+      "items": [
+        {
+          "id": "inv-item-2",
+          "description": "الدفعة الثانية (25%) المستحقة عقب اعتماد اتجاه الهوية البصرية",
+          "amount": 9500
+        }
+      ],
+      "subtotal": 9500,
+      "taxRate": 15,
+      "taxAmount": 1425,
+      "totalAmount": 10925,
+      "paidAmount": 5000,
+      "balanceDue": 5925,
+      "status": "partially_paid",
+      "payments": [
+        {
+          "id": "pay-2",
+          "invoiceId": "inv-2",
+          "amount": 5000,
+          "paymentDate": "2026-10-12",
+          "paymentMethod": "bank_transfer",
+          "transactionReference": "TRX-ALRAJHI-114920",
+          "notes": "دفعة جزئية أولى من مستحقات المرحلة الثانية، المتبقي 5,925 ر.س.",
+          "recordedAt": "2026-10-12T13:00:00Z"
+        }
+      ],
+      "notes": "المتبقي 5,925 ريال سعودي يستحق قبل نهاية فترة الاستحقاق.",
+      "paymentInstructions": "التحويل لحساب مؤسسة مدار للتصميم الإبداعي - آيبان SA4480000123608010123456",
+      "shareToken": "inv-share-qimmah-0083",
+      "createdAt": "2026-10-10T11:00:00Z"
+    },
+    {
+      "id": "inv-3",
+      "invoiceNumber": "INV-2026-0084",
+      "clientId": "client-2",
+      "projectId": "proj-2",
+      "proposalId": "prop-2",
+      "type": "deposit",
+      "title": "فاتورة العربون (50%) - هوية دار أوريليا للأزياء",
+      "issueDate": "2026-09-25",
+      "dueDate": "2026-10-05",
+      "currency": "SAR",
+      "items": [
+        {
+          "id": "inv-item-3",
+          "description": "دفعة البدء وتطوير المودبورد واستراتيجية الدار",
+          "amount": 22500
+        }
+      ],
+      "subtotal": 22500,
+      "taxRate": 15,
+      "taxAmount": 3375,
+      "totalAmount": 25875,
+      "paidAmount": 25875,
+      "balanceDue": 0,
+      "status": "paid",
+      "payments": [
+        {
+          "id": "pay-3",
+          "invoiceId": "inv-3",
+          "amount": 25875,
+          "paymentDate": "2026-09-26",
+          "paymentMethod": "bank_transfer",
+          "transactionReference": "TRX-NCB-554201",
+          "notes": "تم السداد بالكامل عبر التحويل البنكي السريع.",
+          "recordedAt": "2026-09-26T09:40:00Z"
+        }
+      ],
+      "notes": "تم استلام الدفعة والبدء بجمع المراجع الفنية.",
+      "paymentInstructions": "التحويل لحساب مؤسسة مدار للتصميم الإبداعي - آيبان SA4480000123608010123456",
+      "shareToken": "inv-share-aurelia-0084",
+      "createdAt": "2026-09-25T15:00:00Z"
+    }
+  ],
+  "briefForms": [
+    {
+      "id": "brief-1",
+      "projectId": "proj-1",
+      "clientId": "client-1",
+      "title": "بريف هوية محامص قِمة المختصة",
+      "description": "نموذج جمع متطلبات مشروع الهوية البصرية والتغليف لإعادة إطلاق محامص قِمة.",
+      "status": "completed",
+      "shareToken": "brief-share-qimmah-901",
+      "submissionId": "sub-1",
+      "questions": [
+        {
+          "id": "q1",
+          "section": "معلومات النشاط الأساسية",
+          "sectionEn": "Business Information",
+          "title": "ما هو الاسم الدقيق للعلامة التجارية كما ينبغي كتابته؟",
+          "titleEn": "What is the exact brand name as it should be written?",
+          "description": "وضح ما إذا كان هناك اسم عربي ولاتيني معتمدين أو تفاصيل تهجئة محددة.",
+          "type": "short_text",
+          "required": true,
+          "placeholder": "مثال: محامص قِمة / Qimmah Specialty Coffee"
+        },
+        {
+          "id": "q2",
+          "section": "معلومات النشاط الأساسية",
+          "sectionEn": "Business Information",
+          "title": "اشرح نشاطك التجاري والمنتجات أو الخدمات الأساسية التي تقدمها في فقرة واحدة.",
+          "titleEn": "Describe your business and core products/services in one paragraph.",
+          "type": "long_text",
+          "required": true,
+          "placeholder": "نحن متجر ومحمصة للقهوة المختصة نسعى لتقديم تجربة تذوق استثنائية..."
+        },
+        {
+          "id": "q3",
+          "section": "قصة العلامة وأهدافها",
+          "sectionEn": "Brand Story & Objectives",
+          "title": "ما هي القصة وراء تأسيس هذا المشروع والدافع الرئيسي لإطلاقه؟",
+          "titleEn": "What is the story and main motivation behind founding this business?",
+          "type": "long_text",
+          "required": true,
+          "placeholder": "انطلقت الفكرة من شغفنا بمصادر البن المستدامة..."
+        },
+        {
+          "id": "q4",
+          "section": "قصة العلامة وأهدافها",
+          "sectionEn": "Brand Story & Objectives",
+          "title": "ما هو الهدف الأهم الذي ترغب بتحقيقه من خلال هذه الهوية البصرية الجديدة؟",
+          "titleEn": "What is the primary goal of this new visual identity?",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            "بناء حضور احترافي لدخول السوق لأول مرة",
+            "إعادة التموضع والارتقاء نحو فئة سعرية أعلى",
+            "التجهيز للتوسع الجغرافي والفرنشايز",
+            "علاج التشتت البصري وتوحيد تطبيقات العلامة"
+          ]
+        },
+        {
+          "id": "q5",
+          "section": "الجمهور المستهدف والمنافسون",
+          "sectionEn": "Audience & Competitors",
+          "title": "صف العميل المثالي لعلامتك (العمر، الاهتمامات، نمط الحياة، القوة الشرائية).",
+          "titleEn": "Describe your ideal target audience persona.",
+          "type": "long_text",
+          "required": true,
+          "placeholder": "الشباب والمهنيون بين 22-40 عاماً، الباحثون عن الجودة وجماليات التجربة..."
+        },
+        {
+          "id": "q6",
+          "section": "الجمهور المستهدف والمنافسون",
+          "sectionEn": "Audience & Competitors",
+          "title": "من هم المنافسون الثلاثة الأبرز في السوق المباشر؟ (مع روابط مواقعهم أو حساباتهم)",
+          "titleEn": "Who are your top 3 competitors? Include website or social links.",
+          "type": "long_text",
+          "required": true,
+          "placeholder": "1. محمصة كفة (kafah.sa)\n2. سلالات القهوة (varietalcafe.com)\n3. بيت التحميص (roastinghouse.sa)"
+        },
+        {
+          "id": "q7",
+          "section": "شخصية العلامة والتفضيلات البصرية",
+          "sectionEn": "Brand Personality & Visuals",
+          "title": "اختر 3 إلى 5 صفات تعكس شخصية العلامة كما ترغب أن يراها الجمهور:",
+          "titleEn": "Select 3 to 5 adjectives that describe the brand personality:",
+          "type": "multiple_choice",
+          "required": true,
+          "options": [
+            "أصيلة وحرفية (Authentic & Craft)",
+            "حديثة ومينيمال (Modern & Minimal)",
+            "فاخرة ونخبوية (Luxury & High-end)",
+            "دافئة ومرحبة (Warm & Welcoming)",
+            "جريئة ومبتكرة (Bold & Innovative)",
+            "هندسية وصارمة (Geometric & Precise)"
+          ]
+        },
+        {
+          "id": "q8",
+          "section": "شخصية العلامة والتفضيلات البصرية",
+          "sectionEn": "Brand Personality & Visuals",
+          "title": "هل هناك ألوان أو عناصر بصرية تفضل استخدامها أو ترغب بتجنبها تماماً؟",
+          "titleEn": "Are there colors or elements you prefer or strictly want to avoid?",
+          "type": "long_text",
+          "required": false,
+          "placeholder": "نفضل درجات التراب والبيج والأسود المطفي، ونتجنب درجات الأزرق الساطعة..."
+        },
+        {
+          "id": "q9",
+          "section": "التطبيقات والمخرجات المطلوبة",
+          "sectionEn": "Deliverables & Applications",
+          "title": "ما هي التطبيقات الفعلية الأكثر أهمية لعلامتك التجارية؟",
+          "titleEn": "Which touchpoints are most crucial for your brand?",
+          "type": "multiple_choice",
+          "required": true,
+          "options": [
+            "تغليف وعلب المنتجات / الأكياس",
+            "واجهة المحل واللوحات الخارجية",
+            "المطبوعات الورقية والكروت والمنيو",
+            "قوالب وشبكات السوشيال ميديا",
+            "الموقع الإلكتروني وتطبيقات الجوال",
+            "الزي الموحد واليونيفورم"
+          ]
+        },
+        {
+          "id": "q10",
+          "section": "الميزانية والجدول الزمني",
+          "sectionEn": "Timeline & Budget",
+          "title": "ما هو الموعد النهائي المستهدف لتدشين الهوية وإطلاق العمل؟",
+          "titleEn": "What is your target launch deadline?",
+          "type": "date",
+          "required": true
+        }
+      ],
+      "createdAt": "2026-09-15T10:00:00Z",
+      "updatedAt": "2026-09-17T14:00:00Z"
+    },
+    {
+      "id": "brief-2",
+      "projectId": "proj-2",
+      "clientId": "client-2",
+      "title": "بريف هوية دار أوريليا للأزياء الراقية",
+      "description": "نموذج تفضيلات الهوية البصرية والتغليف لدار الأزياء.",
+      "status": "completed",
+      "shareToken": "brief-share-aurelia-902",
+      "submissionId": "sub-2",
+      "questions": [
+        {
+          "id": "q1",
+          "section": "معلومات النشاط الأساسية",
+          "sectionEn": "Business Information",
+          "title": "ما هو الاسم الدقيق للعلامة التجارية كما ينبغي كتابته؟",
+          "titleEn": "What is the exact brand name as it should be written?",
+          "description": "وضح ما إذا كان هناك اسم عربي ولاتيني معتمدين أو تفاصيل تهجئة محددة.",
+          "type": "short_text",
+          "required": true,
+          "placeholder": "مثال: محامص قِمة / Qimmah Specialty Coffee"
+        },
+        {
+          "id": "q2",
+          "section": "معلومات النشاط الأساسية",
+          "sectionEn": "Business Information",
+          "title": "اشرح نشاطك التجاري والمنتجات أو الخدمات الأساسية التي تقدمها في فقرة واحدة.",
+          "titleEn": "Describe your business and core products/services in one paragraph.",
+          "type": "long_text",
+          "required": true,
+          "placeholder": "نحن متجر ومحمصة للقهوة المختصة نسعى لتقديم تجربة تذوق استثنائية..."
+        },
+        {
+          "id": "q3",
+          "section": "قصة العلامة وأهدافها",
+          "sectionEn": "Brand Story & Objectives",
+          "title": "ما هي القصة وراء تأسيس هذا المشروع والدافع الرئيسي لإطلاقه؟",
+          "titleEn": "What is the story and main motivation behind founding this business?",
+          "type": "long_text",
+          "required": true,
+          "placeholder": "انطلقت الفكرة من شغفنا بمصادر البن المستدامة..."
+        },
+        {
+          "id": "q4",
+          "section": "قصة العلامة وأهدافها",
+          "sectionEn": "Brand Story & Objectives",
+          "title": "ما هو الهدف الأهم الذي ترغب بتحقيقه من خلال هذه الهوية البصرية الجديدة؟",
+          "titleEn": "What is the primary goal of this new visual identity?",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            "بناء حضور احترافي لدخول السوق لأول مرة",
+            "إعادة التموضع والارتقاء نحو فئة سعرية أعلى",
+            "التجهيز للتوسع الجغرافي والفرنشايز",
+            "علاج التشتت البصري وتوحيد تطبيقات العلامة"
+          ]
+        },
+        {
+          "id": "q5",
+          "section": "الجمهور المستهدف والمنافسون",
+          "sectionEn": "Audience & Competitors",
+          "title": "صف العميل المثالي لعلامتك (العمر، الاهتمامات، نمط الحياة، القوة الشرائية).",
+          "titleEn": "Describe your ideal target audience persona.",
+          "type": "long_text",
+          "required": true,
+          "placeholder": "الشباب والمهنيون بين 22-40 عاماً، الباحثون عن الجودة وجماليات التجربة..."
+        },
+        {
+          "id": "q6",
+          "section": "الجمهور المستهدف والمنافسون",
+          "sectionEn": "Audience & Competitors",
+          "title": "من هم المنافسون الثلاثة الأبرز في السوق المباشر؟ (مع روابط مواقعهم أو حساباتهم)",
+          "titleEn": "Who are your top 3 competitors? Include website or social links.",
+          "type": "long_text",
+          "required": true,
+          "placeholder": "1. محمصة كفة (kafah.sa)\n2. سلالات القهوة (varietalcafe.com)\n3. بيت التحميص (roastinghouse.sa)"
+        },
+        {
+          "id": "q7",
+          "section": "شخصية العلامة والتفضيلات البصرية",
+          "sectionEn": "Brand Personality & Visuals",
+          "title": "اختر 3 إلى 5 صفات تعكس شخصية العلامة كما ترغب أن يراها الجمهور:",
+          "titleEn": "Select 3 to 5 adjectives that describe the brand personality:",
+          "type": "multiple_choice",
+          "required": true,
+          "options": [
+            "أصيلة وحرفية (Authentic & Craft)",
+            "حديثة ومينيمال (Modern & Minimal)",
+            "فاخرة ونخبوية (Luxury & High-end)",
+            "دافئة ومرحبة (Warm & Welcoming)",
+            "جريئة ومبتكرة (Bold & Innovative)",
+            "هندسية وصارمة (Geometric & Precise)"
+          ]
+        },
+        {
+          "id": "q8",
+          "section": "شخصية العلامة والتفضيلات البصرية",
+          "sectionEn": "Brand Personality & Visuals",
+          "title": "هل هناك ألوان أو عناصر بصرية تفضل استخدامها أو ترغب بتجنبها تماماً؟",
+          "titleEn": "Are there colors or elements you prefer or strictly want to avoid?",
+          "type": "long_text",
+          "required": false,
+          "placeholder": "نفضل درجات التراب والبيج والأسود المطفي، ونتجنب درجات الأزرق الساطعة..."
+        },
+        {
+          "id": "q9",
+          "section": "التطبيقات والمخرجات المطلوبة",
+          "sectionEn": "Deliverables & Applications",
+          "title": "ما هي التطبيقات الفعلية الأكثر أهمية لعلامتك التجارية؟",
+          "titleEn": "Which touchpoints are most crucial for your brand?",
+          "type": "multiple_choice",
+          "required": true,
+          "options": [
+            "تغليف وعلب المنتجات / الأكياس",
+            "واجهة المحل واللوحات الخارجية",
+            "المطبوعات الورقية والكروت والمنيو",
+            "قوالب وشبكات السوشيال ميديا",
+            "الموقع الإلكتروني وتطبيقات الجوال",
+            "الزي الموحد واليونيفورم"
+          ]
+        },
+        {
+          "id": "q10",
+          "section": "الميزانية والجدول الزمني",
+          "sectionEn": "Timeline & Budget",
+          "title": "ما هو الموعد النهائي المستهدف لتدشين الهوية وإطلاق العمل؟",
+          "titleEn": "What is your target launch deadline?",
+          "type": "date",
+          "required": true
+        }
+      ],
+      "createdAt": "2026-09-25T11:00:00Z",
+      "updatedAt": "2026-09-27T18:00:00Z"
+    }
+  ],
+  "briefSubmissions": [
+    {
+      "id": "sub-1",
+      "formId": "brief-1",
+      "projectId": "proj-1",
+      "clientId": "client-1",
+      "clientName": "عبدالله السبيعي",
+      "clientEmail": "ceo@qimmahcoffee.com",
+      "clientCompany": "محامص قِمة المختصة",
+      "submittedAt": "2026-09-17T14:00:00Z",
+      "isDraft": false,
+      "answers": {
+        "q1": "محامص قِمة المختصة / Qimmah Specialty Coffee",
+        "q2": "محمصة وبار قهوة مختصة سعودي نركز على استيراد محاصيل حبوب البن من صغار المزارعين في إثيوبيا وكولومبيا واليمن، مع تقديم تجارب تذوق حصرية في الفروع وتوريد الأكياس للشركات والمنازل.",
+        "q3": "بدأنا عام 2021 كمعمل تحميص صغير. بعد نجاح أول فرعين، نود تأسيس حضور علامة مرجعي يعبر عن الشغف الحرفي والجودة الفائقة بدون تكلف.",
+        "q4": "التجهيز للتوسع الجغرافي والفرنشايز",
+        "q5": "محبو القهوة ورواد الأعمال والمبدعون من عمر 23-45 عاماً. يهتمون بأصل المحصول وملاحظات التذوق والتصميم الأنيق الذي يعبر عن ذوقهم.",
+        "q6": "1. محمصة كفة (kafah.sa)\n2. سلالات القهوة (varietalcafe.com)\n3. بيت التحميص (roastinghouse.sa)",
+        "q7": [
+          "أصيلة وحرفية (Authentic & Craft)",
+          "حديثة ومينيمال (Modern & Minimal)",
+          "دافئة ومرحبة (Warm & Welcoming)"
+        ],
+        "q8": "نحب الألوان الترابية الدافئة، البيج الطبيعي (Travertine/Kraft)، الأسود الفحمي، وتطعيمات خفيفة بلون نحاسي أو برونزي مطفي. نرفض تماماً استخدام أي رسمة فنجان قهوة تقليدي أو بخار طائر.",
+        "q9": [
+          "تغليف وعلب المنتجات / الأكياس",
+          "المطبوعات الورقية والكروت والمنيو",
+          "واجهة المحل واللوحات الخارجية"
+        ],
+        "q10": "2026-11-15"
+      }
+    },
+    {
+      "id": "sub-2",
+      "formId": "brief-2",
+      "projectId": "proj-2",
+      "clientId": "client-2",
+      "clientName": "نورة العتيبي",
+      "clientEmail": "noura@aurelia.sa",
+      "clientCompany": "دار أوريليا للأزياء",
+      "submittedAt": "2026-09-27T18:00:00Z",
+      "isDraft": false,
+      "answers": {
+        "q1": "أوريليا / Aurélia Atelier",
+        "q2": "دار تصميم أزياء نسائية راقية وفساتين سهرة راقية تعتمد على خامات الحرير والكشمير والقصات المعمارية النظيفة.",
+        "q3": "استلهام الأناقة الكلاسيكية بلمسة معاصرة مع الاهتمام المطلق بالحرفية والخصوصية.",
+        "q4": "بناء حضور احترافي لدخول السوق لأول مرة",
+        "q5": "السيدات الأنيقات من 25-50 عاماً الباحثات عن قطع فريدة غير تجارية ذات قيمة مستدامة.",
+        "q6": "1. دار حنّان (hannanstudio.sa)\n2. دار ياسمين (yasminacollection.com)\n3. Toteme (toteme-studio.com)",
+        "q7": [
+          "فاخرة ونخبوية (Luxury & High-end)",
+          "حديثة ومينيمال (Modern & Minimal)"
+        ],
+        "q8": "ألوان نيوترال ناعمة: إكرو، أوف وايت، رمادي دافئ، خطوط سريف أنيقة.",
+        "q9": [
+          "تغليف وعلب المنتجات / الأكياس",
+          "المطبوعات الورقية والكروت والمنيو"
+        ],
+        "q10": "2026-12-01"
+      }
+    }
+  ],
+  "researchWorkspaces": [
+    {
+      "id": "research-proj-1",
+      "projectId": "proj-1",
+      "executiveSummary": "دراسة استراتيجية شاملة لسوق القهوة المختصة في المملكة العربية السعودية، وتحليل التموضع التنافسي لمحامص قِمة، واستخلاص الفجوة البصرية بين الحرفية التراثية المعاصرة وتجارب الجيل الثالث من المقاهي.",
+      "researchGoals": [
+        "تحديد الفجوة التسويقية غير المستغلة بين محامص الجيل الثالث والمقاهي التجارية السريعة.",
+        "تحليل الرموز والألوان والأنماط البصرية السائدة لدى المنافسين المباشرين لتفادي التكرار.",
+        "صياغة تموضع بصري يستحضر معنى \"قِمة\" كدلالة على ذروة الجودة وارتفاع المزارع الجبلية دون الوقوع في كليشيهات القمم الجبلية التقليدية."
+      ],
+      "marketOverview": "يشهد سوق القهوة المختصة السعودي نمواً استثنائياً مدفوعاً بوعي متزايد بمحاصيل البن وتنوع سلالات المعالجة. ومع تشبع السوق بمقاهي الـ Minimal المكررة (الخرسانة الرمادية والخطوط الهندسية الصماء)، أصبح الجمهور يبحث عن العلامات ذات الدفء الحرفي والقصص الأصيلة الموثقة.",
+      "targetAudience": {
+        "demographics": "الفئة العمرية 23-42 سنة، من الذكور والإناث، مهنيون ورواد أعمال ومبدعون في المدن الرئيسية (الرياض، الشرقية، جدة).",
+        "psychographics": "تقدير عالي للحرفية والشفافية في سلاسل التوريد، البحث عن مساحات هادئة ملهمة للقاءات والعمل، الرغبة في التميز الاجتماعي عبر استهلاك علامات نوعية ذات ذوق رفيع.",
+        "painPoints": [
+          "صعوبة تمييز جودة المحاصيل بين عشرات العلامات المتشابهة في السوق.",
+          "تصاميم التغليف المعقدة التي تخفي معلومات التحميص وتاريخ المعالجة.",
+          "التصاميم الباردة التي تفقد المقهى طابعه الحميم والمرحب."
+        ],
+        "buyingBehavior": "شراء يومي للقهوة من الفرع مع شراء دوري لأكياس المحاصيل الكاملة للمنزل (بمعدل 2-3 أكياس شهرياً)، والاهتمام بتفاصيل إكسسوارات القهوة وأكواب السيراميك الحرفية.",
+        "expectations": "وضوح فائق لبطاقة تذوق المحصول، هوية بصرية مريحة للعين، وتغليف يحافظ على جودة النكهة مع ملمس ورقي عالي الجودة."
+      },
+      "competitors": [
+        {
+          "id": "comp-1",
+          "name": "محمصة كفة (Kafah Roastery)",
+          "website": "https://kafah.sa",
+          "socials": "@kafah_sa",
+          "positioning": "محمصة سعودية رائدة تركز على التنوع الواسع للمحاصيل والوصول لكافة فئات عشاق القهوة عبر التوزيع التجاري الواسع.",
+          "logoAnalysis": "شعار نصي بالخط العربي الحديث مع رمز مجرد لكفة الميزان.",
+          "primaryColors": [
+            "#1C1917",
+            "#E7E5E4",
+            "#CA8A04"
+          ],
+          "typography": "خط عربي حديث مسطح مع خط لاتيني Geometric Sans.",
+          "packagingStyle": "أكياس غير لامعة بألوان باستيل هادئة تتغير بتغير الدولة المصدرة.",
+          "toneOfVoice": "تعليمي، احترافي، ودود ومبسط لمصطلحات التحميص.",
+          "strengths": [
+            "انتشار جغرافي قوي وشبكة موزعين ممتازة",
+            "تنوع كبير في خيارات التحميص السريع والفلتر"
+          ],
+          "weaknesses": [
+            "فقدان الطابع الحصري الفاخر نتيجة الانتشار التجاري الكثيف",
+            "تفاوت تجربة الفروع من موقع لآخر"
+          ],
+          "sourceDate": "2026-09-28",
+          "sourceNote": "دراسة ميدانية لفرع النرجس والموقع الإلكتروني"
+        },
+        {
+          "id": "comp-2",
+          "name": "سلالات القهوة (Varietal Cafe)",
+          "website": "https://varietalcafe.com",
+          "socials": "@varietal_cafe",
+          "positioning": "المرجع الأكاديمي للقهوة المختصة، تركيز صارم على درجات التقييم العالمية (SCA Cup Score 88+).",
+          "logoAnalysis": "شعار نخبوي كلاسيكي يعتمد على تايبوغرافي تقليدي مستلهم من الوثائق الزراعية.",
+          "primaryColors": [
+            "#0A0A0A",
+            "#F5F5F4",
+            "#78350F"
+          ],
+          "typography": "خطوط Serif تقليدية ذات هيبة أكاديمية مع أرقام لاتينية بارزة.",
+          "packagingStyle": "علب كرتونية فاخرة بنظام الأدراج الداخلية مع بطاقات ورقية مختومة يدوياً.",
+          "toneOfVoice": "نخبوي، علمي، دقيق وشديد الجدية.",
+          "strengths": [
+            "سمعة لا تشوبها شائبة بين خبراء القهوة والمحكمين",
+            "ولاء عملاء مرتفع جداً للفئة النخبوية"
+          ],
+          "weaknesses": [
+            "نبرة قد تبدو متعالية أو مربكة للزبون اليومي العادي",
+            "أسعار مرتفعة مقارنة بمتوسط السوق"
+          ],
+          "sourceDate": "2026-10-02",
+          "sourceNote": "موقع الشركة وتقارير مبيعات التجارة الإلكترونية"
+        },
+        {
+          "id": "comp-3",
+          "name": "إلِكسير القهوة (Elixir Bunn)",
+          "website": "https://elixirbunn.com",
+          "socials": "@elixirbunn",
+          "positioning": "تجربة معمارية وثقافية تجمع بين التراث النجدي واللمسات المعاصرة.",
+          "logoAnalysis": "رمز أيقوني مقتبس من هندسة الأقواس والزخارف المعمارية النجدية مع كاليغرافي عربي.",
+          "primaryColors": [
+            "#292524",
+            "#D6D3D1",
+            "#9A3412"
+          ],
+          "typography": "خط عربي مخصص مستوحى من الخط الكوفي مع خط لاتيني أنيق.",
+          "packagingStyle": "أكياس بنية كرافت طبيعية مطبوعة بالأسيلك سكرين مع أختام حرارية.",
+          "toneOfVoice": "أدبي، شاعري، محتفي بالتاريخ والأصالة.",
+          "strengths": [
+            "طابع بصري وهوية مكانية فريدة للغاية",
+            "ارتباط قوي بالثقافة المحلية"
+          ],
+          "weaknesses": [
+            "صعوبة تطويع الهوية لمنتجات الـ Retail السريعة خارج إطار الفروع"
+          ],
+          "sourceDate": "2026-10-04",
+          "sourceNote": "زيارة فرع حي النخيل"
+        }
+      ],
+      "visualPatterns": {
+        "clichesToAvoid": [
+          "رسمة حبة البن المقسومة من المنتصف في الشعار",
+          "صورة الفنجان التقليدي مع خطوط البخار المتصاعدة",
+          "المثلثات الحادة التي ترمز لجبال القهوة بشكل مباشر ومبتذل",
+          "الاعتماد على اللون البني الغامق وحده الذي يسبب كآبة بصرية"
+        ],
+        "commonColors": [
+          "درجات الأسود الفحمي (#1C1917)",
+          "البيج الطبيعي والورق الحرفي (#E7E5E4)",
+          "الأخضر الزيتوني الهادئ (#3F6212)"
+        ],
+        "emergingAesthetics": [
+          "التصوير بضوء النافذة الطبيعي الدافئ مع ظلال ناعمة (Editorial Lighting)",
+          "الورق المضغوط بالألياف والملمس غير المصقول (Uncoated Textured Stock)",
+          "الطباعة الحرفية بالضغط والرقائق المعدنية المطفية (Debossed Foil Stamping)"
+        ],
+        "symbolisms": [
+          "الارتفاع والتسامي عبر تكوينات رأسية متزنة",
+          "الخرائط الطبوغرافية المنقوشة برقة متناهية"
+        ],
+        "materialsAndPackaging": "استخدام أكياس كرافت ببطانة ألومنيوم داخلية قابلة لإعادة التدوير مع صمام تفريغ هواء أحادي ونظام إغلاق Zipper سحابي عالي الإحكام."
+      },
+      "brandNameAnalysis": {
+        "etymology": "كلمة \"قِمة\" في المعجم العربي تعني أعلى الشيء وذروته، ويقال قمة الجبل أي رأسه وأعلاه.",
+        "linguisticOrigin": "جذر لغوي عربي ثلاثي (ق م م) يرتبط بالعلو والرفعة والكمال في الإنجاز.",
+        "mentalAssociations": [
+          "أعلى مستويات الجودة والإتقان",
+          "المرتفعات الجبلية حيث تنمو أندر أنواع حبوب البن الأرابيكا",
+          "الطموح والريادة والسعي الدائم للأفضل"
+        ],
+        "visualOpportunities": [
+          "بناء مونوغرام هندسي تجريدي يدمج حرف القاف مع إيحاء الارتفاع الرأسي دون الحاجة لرسم جبل حرفي.",
+          "استخدام خط عربي تايبوغرافي يتميز بسيقان رأسية ممتدة وأنيقة تعكس السمو.",
+          "تطبيق خطوط الارتفاع الكنتورية (Topographic Contours) كنمط زخرفي ثانوي في التغليف."
+        ],
+        "risksOrMisinterpretations": [
+          "قد توحي الكلمة بجدية مفرطة أو طابع شركات المؤتمرات الرسمية إن لم تُقترن ببالتة دافئة وحرفية عصرية.",
+          "الحاجة لتأكيد صلة الاسم بعالم القهوة من خلال سياق التغليف وتوصيف \"محامص مختصة\"."
+        ]
+      },
+      "strategicOpportunities": {
+        "marketGaps": [
+          "غياب علامة تجارية تجمع بين البساطة المينيمال المعاصرة وبين الدفء الإنساني الترحيبي في التغليف.",
+          "معظم المنافسين يركزون على زبائن القهوة الجاهزة بينما تهمل تجربة الشراء المنزلي وبطاقات الوصفات."
+        ],
+        "differentiationPoints": [
+          "نظام بطاقات وصفة التحضير الذكية في خلف كل كيس (درجة الطحن، حرارة الماء، ونسبة الاستخلاص).",
+          "استخدام لغة عربية فصيحة أنيقة وغير متكلفة في كافة نقاط التماس."
+        ],
+        "visualStrategyDo": [
+          "اعتماد باليتة ترابية مهدئة: الأبيض العاجي (Bone White)، الرمادي الحجري (Travertine)، والأسود الفحمي.",
+          "دمج حرف القاف العربي مع الرمز اللاتيني Q في ختم شمعي أو مونوغرام أيقوني واحد.",
+          "تحديد مساحات بيضاء متسعة حول الشعار لإبراز الفخامة والهدوء."
+        ],
+        "visualStrategyAvoid": [
+          "تجنب التدرجات اللونية الفاقعة والـ Neon والألوان الاصطناعية.",
+          "تجنب الخطوط العربية المشوهة أو المستعجلة غير الموزونة."
+        ],
+        "keyDecisionsToValidate": [
+          "اختبار قراءة الشعار في الأحجام المصغرة على أختام الأكواب والملصقات بقطر 20mm.",
+          "مقارنة تكلفة خامات الأكياس القابلة لإعادة التدوير مع الموردين المحليين."
+        ]
+      },
+      "sources": [
+        {
+          "id": "src-1",
+          "title": "تقرير وزارة البيئة والمياه والزراعة حول زراعة البن في جنوب المملكة",
+          "url": "https://mewa.gov.sa/ar/informationcenter/reports/coffee-sector-2025",
+          "type": "report",
+          "notes": "إحصاءات حول نمو إنتاج البن الخولاني السعودي وارتفاع الطلب المحلي.",
+          "dateAccessed": "2026-09-20"
+        },
+        {
+          "id": "src-2",
+          "title": "دليل جمعية القهوة المختصة العالمية (SCA) لمعايير التذوق والتصنيف",
+          "url": "https://sca.coffee/protocols-and-standards",
+          "type": "report",
+          "notes": "المعايير الدولية لوصف الإيحاءات النكهية وتصنيف درجات التحميص.",
+          "dateAccessed": "2026-09-22"
+        },
+        {
+          "id": "src-3",
+          "title": "دراسة ميدانية لمقاهي حي النرجس وحطين بالرياض",
+          "url": "internal://field-study/riyadh-cafes-q3",
+          "type": "field_study",
+          "notes": "رصد سلوك 120 زبوناً وسرعة اتخاذ قرار شراء أكياس القهوة من الرفوف.",
+          "dateAccessed": "2026-10-01"
+        }
+      ],
+      "updatedAt": "2026-10-12T16:00:00Z"
+    }
+  ],
+  "moodboards": [
+    {
+      "id": "mb-proj-1",
+      "projectId": "proj-1",
+      "title": "لوحة الاتجاهات البصرية لمحامص قِمة",
+      "directions": [
+        {
+          "id": "dir-1",
+          "name": "الاتجاه الأول: الحرفية الهادئة (Artisanal Warmth)",
+          "description": "اتجاه يحتفي بأصالة الورق الطبيعي، الأختام الحرفية، والتفاصيل الملموسة مع تباين راقٍ بين الأسود الفحمي ولون الحجر الجيري.",
+          "colorPalette": [
+            "#1A1817",
+            "#E8E5DF",
+            "#C5A880",
+            "#54504A"
+          ],
+          "isClientApproved": true,
+          "assets": [
+            {
+              "id": "ast-1",
+              "title": "هوية مكتبية بلمسات الختم والشمع",
+              "imageUrl": "/src/assets/images/brandflow_studio_hero_1792158732035.jpg",
+              "sourceUrl": "https://madarstudio.design/archive/ref-01",
+              "tags": [
+                "ختم شمعي",
+                "ورق كرافت",
+                "أختام بارزة"
+              ],
+              "notes": "مرجع ممتاز لنظام بطاقات التعريف وكروت الشكر في أكياس القهوة.",
+              "category": "stationery"
+            },
+            {
+              "id": "ast-2",
+              "title": "أكياس القهوة الحرفية بلون أسود وكرافت مطفي",
+              "imageUrl": "/src/assets/images/moodboard_coffee_roastery_1792158732658.jpg",
+              "sourceUrl": "https://madarstudio.design/archive/ref-02",
+              "tags": [
+                "تغليف قهوة",
+                "ورق كرافت",
+                "شعار ذهبي مطفي"
+              ],
+              "notes": "الاتجاه المعتمد لخط التغليف بحجمي 250 جرام و1 كيلو.",
+              "category": "packaging"
+            }
+          ]
+        },
+        {
+          "id": "dir-2",
+          "name": "الاتجاه الثاني: المينيمال المعماري (Architectural Purity)",
+          "description": "اتجاه يعتمد على الخطوط الهندسية الصارمة، الفراغات الواسعة، والتايبوغرافي الموزون.",
+          "colorPalette": [
+            "#111827",
+            "#F3F4F6",
+            "#9CA3AF"
+          ],
+          "isClientApproved": false,
+          "assets": [
+            {
+              "id": "ast-3",
+              "title": "تايبوغرافي وملمس الحجر والحرير",
+              "imageUrl": "/src/assets/images/moodboard_minimal_fashion_1792158733232.jpg",
+              "tags": [
+                "تايبوغرافي",
+                "رخام ترابرتين",
+                "مينيمال"
+              ],
+              "notes": "تطبيق للواجهات المعمارية للمحمص الجديد.",
+              "category": "composition"
+            }
+          ]
+        }
+      ],
+      "clientNotes": "اعتمدنا الاتجاه الأول (الحرفية الهادئة) مع تفضيل دمج اللون النحاسي المطفي للطباعة البارزة.",
+      "approvedDirectionId": "dir-1",
+      "updatedAt": "2026-10-10T14:00:00Z"
+    }
+  ],
+  "revisions": [
+    {
+      "id": "rev-1",
+      "projectId": "proj-1",
+      "roundNumber": 1,
+      "requestDate": "2026-10-11",
+      "clientFeedback": "نود تجربة تصغير سمك خط حلقة الشعار الخارجية بنسبة 15% للتأكد من سهولة وضوحها عند الطباعة على الأكواب الصغيرة، مع إضافة سنة التأسيس 2021 في أسفل الختم.",
+      "itemsRequested": [
+        "تعديل سماكة الخط الخارجي للشعار الدائري",
+        "إدراج سنة التأسيس Est. 2021 بخط ناعم",
+        "تحديث نموذج الموك آب للأكواب سعة 8 أونص"
+      ],
+      "status": "in_progress",
+      "designerNotes": "تم تجهيز التعديلات المطلوبة وجارٍ تصدير نماذج العرض النهائي للمراجعة."
+    }
+  ],
+  "deliverables": [
+    {
+      "id": "del-1",
+      "projectId": "proj-1",
+      "title": "حزمة الشعارات المكتملة (Master Vector Logos)",
+      "category": "logo_vectors",
+      "fileFormat": "AI / SVG / EPS",
+      "fileSizeMb": 42.5,
+      "downloadUrl": "/deliverables/qimmah_master_vectors_v1.zip",
+      "isPublicForClient": true,
+      "notes": "تتضمن الشعار باللغتين العربية واللاتينية بكافة الألوان المعتمدة (الداكن، الفاتح، والرمزي).",
+      "uploadedAt": "2026-10-14T11:00:00Z"
+    },
+    {
+      "id": "del-2",
+      "projectId": "proj-1",
+      "title": "دليل الهوية البصرية الشامل (Brand Guidelines PDF)",
+      "category": "brand_guidelines",
+      "fileFormat": "PDF",
+      "fileSizeMb": 18.2,
+      "downloadUrl": "/deliverables/qimmah_brand_guidelines_2026.pdf",
+      "isPublicForClient": true,
+      "notes": "كتيب إرشادي من 48 صفحة يشرح منظومة الهوية، قياسات الشعار، قواعد الألوان، وتطبيقات الفروع.",
+      "uploadedAt": "2026-10-14T15:30:00Z"
+    },
+    {
+      "id": "del-3",
+      "projectId": "proj-1",
+      "title": "ملفات قوالب الطباعة لأكياس القهوة (Dielines & Packaging)",
+      "category": "packaging",
+      "fileFormat": "PDF / AI",
+      "fileSizeMb": 35.8,
+      "downloadUrl": "/deliverables/qimmah_packaging_dielines.zip",
+      "isPublicForClient": true,
+      "notes": "جاهزة للإرسال مباشرة للمطبعة مع تحديد أرقام ألوان البانتون وتوصيف الخامات.",
+      "uploadedAt": "2026-10-15T09:00:00Z"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-1",
+      "projectId": "proj-1",
+      "clientId": "client-1",
+      "action": "توقيع الاتفاقية وسداد العربون",
+      "actionType": "payment",
+      "description": "قام العميل عبدالله السبيعي بسداد فاتورة العربون (21,850 ر.س) واعتماد الاتفاقية رقم AGR-2026-0018.",
+      "timestamp": "2026-09-15T10:15:00Z",
+      "actor": "نظام الاستوديو"
+    },
+    {
+      "id": "act-2",
+      "projectId": "proj-1",
+      "clientId": "client-1",
+      "action": "اكتمال تعبئة نموذج البريف",
+      "actionType": "create",
+      "description": "تم استلام إجابات بريف الهوية البصرية الشامل من العميل بنجاح.",
+      "timestamp": "2026-09-17T14:00:00Z",
+      "actor": "عبدالله السبيعي"
+    },
+    {
+      "id": "act-3",
+      "projectId": "proj-1",
+      "clientId": "client-1",
+      "action": "إنجاز تقرير البحث والمنافسين",
+      "actionType": "update",
+      "description": "أكمل المصمم محمد أبو السعود إعداد تقرير البحث الاستراتيجي وتحليل المنافسين وتوليد ملف التقرير.",
+      "timestamp": "2026-10-05T12:00:00Z",
+      "actor": "محمد أبو السعود"
+    },
+    {
+      "id": "act-4",
+      "projectId": "proj-1",
+      "clientId": "client-1",
+      "action": "اعتماد اتجاه المودبورد وسداد الدفعة الجزئية",
+      "actionType": "approval",
+      "description": "تم اعتماد \"الاتجاه الأول: الحرفية الهادئة\" وسداد 5,000 ر.س من فاتورة المرحلة الثانية.",
+      "timestamp": "2026-10-12T13:00:00Z",
+      "actor": "عبدالله السبيعي"
+    },
+    {
+      "id": "act-5",
+      "projectId": "proj-2",
+      "clientId": "client-2",
+      "action": "سداد عربون البدء لدار أوريليا",
+      "actionType": "payment",
+      "description": "سداد كامل قيمة الفاتورة INV-2026-0084 بمبلغ 25,875 ر.س وتأكيد حجز المشروع.",
+      "timestamp": "2026-09-26T09:40:00Z",
+      "actor": "نورة العتيبي"
+    }
+  ],
+  "users": [
+    {
+      "id": "user_mohamed_abualsaud",
+      "email": "abualss3ud@gmail.com",
+      "passwordHash": "admin123",
+      "name": "محمد أبو السعود",
+      "role": "admin",
+      "title": "مصمم واستراتيجي هويات بصرية مستقل | Independent Brand Identity Designer",
+      "avatarUrl": "/src/assets/images/designer_avatar_lead_1792158732035.jpg",
+      "createdAt": "2026-01-01T08:00:00Z",
+      "lastLoginAt": "2026-10-16T14:30:00Z"
+    },
+    {
+      "id": "user_assistant_1",
+      "email": "assistant@brandflow.studio",
+      "passwordHash": "designer123",
+      "name": "مساعد إنتاج الهوية (سارة)",
+      "role": "member",
+      "title": "مساعد تصميم وتطبيقات",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+      "createdAt": "2026-02-15T09:30:00Z",
+      "lastLoginAt": "2026-10-16T14:30:00Z"
+    }
+  ],
+  "resetTokens": []
+}

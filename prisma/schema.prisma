@@ -1,0 +1,561 @@
+// BrandFlow Studio Management Platform - Prisma Schema
+// PostgreSQL Relational Database Schema Definition
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ---------------------------------------------------------------------------
+// Enums
+// ---------------------------------------------------------------------------
+
+enum UserRole {
+  ADMIN
+  MEMBER
+  CLIENT
+}
+
+enum ClientStatus {
+  LEAD
+  CONTACTED
+  NEGOTIATING
+  ACTIVE
+  ARCHIVED
+}
+
+enum ProjectStatus {
+  BRIEFING
+  STRATEGY
+  MOODBOARD
+  CONCEPT_DESIGN
+  CLIENT_REVIEW
+  REVISIONS
+  GUIDELINES
+  DELIVERABLES
+  CLOSED
+}
+
+enum ProposalStatus {
+  DRAFT
+  SENT
+  VIEWED
+  ACCEPTED
+  REJECTED
+  EXPIRED
+}
+
+enum InvoiceStatus {
+  DRAFT
+  ISSUED
+  PARTIALLY_PAID
+  PAID
+  OVERDUE
+  CANCELLED
+}
+
+enum AgreementStatus {
+  DRAFT
+  SENT_TO_CLIENT
+  SIGNED
+  EXPIRED
+}
+
+enum DeliverableCategory {
+  LOGO_VECTORS
+  BRAND_GUIDELINES
+  STATIONERY
+  SOCIAL_TEMPLATES
+  PACKAGING
+  TYPOGRAPHY_FONTS
+  SOURCE_FILES
+}
+
+enum ActionType {
+  CREATE
+  UPDATE
+  APPROVAL
+  PAYMENT
+  DELIVERY
+  STATUS_CHANGE
+}
+
+// ---------------------------------------------------------------------------
+// Users & Authentication
+// ---------------------------------------------------------------------------
+
+model User {
+  id                    String        @id @default(uuid())
+  email                 String        @unique
+  passwordHash          String
+  name                  String
+  role                  UserRole      @default(MEMBER)
+  title                 String?
+  avatarUrl             String?
+  resetPasswordToken    String?
+  resetPasswordExpires  DateTime?
+  lastLoginAt           DateTime?
+  createdAt             DateTime      @default(now())
+  updatedAt             DateTime      @updatedAt
+
+  activities            ActivityLog[]
+
+  @@index([email])
+  @@index([role])
+  @@map("users")
+}
+
+// ---------------------------------------------------------------------------
+// Studio Profile & Global Settings
+// ---------------------------------------------------------------------------
+
+model StudioSetting {
+  id                    String   @id @default("default")
+  studioName            String   @default("استوديو فلو للهويات البصرية")
+  studioNameEn          String   @default("Flow Brand Identity Studio")
+  tagline               String   @default("تصميم واستراتيجية علامات تجارية تصنع الأثر")
+  taglineEn             String   @default("Strategic Brand Identities That Drive Impact")
+  ownerName             String   @default("راكان الشمري")
+  email                 String   @default("contact@brandflow.studio")
+  phone                 String   @default("+966 50 123 4567")
+  address               String   @default("الرياض، المملكة العربية السعودية")
+  taxNumber             String   @default("300123456700003")
+  crNumber              String   @default("1010789456")
+  defaultCurrency       String   @default("SAR")
+  defaultTaxRate        Float    @default(15.0)
+  defaultRevisionsCount Int      @default(3)
+  defaultPaymentTerms   String   @default("عربون 50% مقدمًا و50% عند تسليم الملفات النهائية")
+  bankName              String   @default("مصرف الراجحي")
+  accountName           String   @default("استوديو فلو للتصميم")
+  iban                  String   @default("SA0380000456608010167890")
+  swift                 String?  @default("RJHISARI")
+  logoUrl               String?
+  brandColor            String   @default("#171717")
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+
+  @@map("studio_settings")
+}
+
+// ---------------------------------------------------------------------------
+// Clients CRM
+// ---------------------------------------------------------------------------
+
+model Client {
+  id                 String             @id @default(uuid())
+  name               String
+  company            String
+  email              String             @unique
+  phone              String
+  country            String             @default("السعودية")
+  industry           String
+  source             String             @default("موقع إلكتروني")
+  status             ClientStatus       @default(ACTIVE)
+  internalNotes      String?
+  portalAccessKey    String             @unique @default(uuid())
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+
+  projects           Project[]
+  proposals          Proposal[]
+  invoices           Invoice[]
+  agreements         Agreement[]
+  briefSubmissions   BriefSubmission[]
+  activities         ActivityLog[]
+
+  @@index([email])
+  @@index([status])
+  @@index([portalAccessKey])
+  @@map("clients")
+}
+
+// ---------------------------------------------------------------------------
+// Projects & Milestones
+// ---------------------------------------------------------------------------
+
+model Project {
+  id                 String             @id @default(uuid())
+  clientId           String
+  name               String
+  code               String             @unique
+  serviceType        String             @default("هوية بصرية شاملة")
+  description        String
+  startDate          DateTime           @default(now())
+  targetDate         DateTime
+  budget             Decimal            @db.Decimal(12, 2)
+  currency           String             @default("SAR")
+  status             ProjectStatus      @default(BRIEFING)
+  progressPercentage Int                @default(10)
+  currentStageIndex  Int                @default(0)
+  revisionsAllowed   Int                @default(3)
+  revisionsUsed      Int                @default(0)
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+
+  client             Client             @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  stages             ProjectStage[]
+  proposals          Proposal[]
+  invoices           Invoice[]
+  agreements         Agreement[]
+  briefForms         BriefForm[]
+  researchWorkspace  ResearchWorkspace?
+  moodboards         Moodboard[]
+  revisions          RevisionRequest[]
+  deliverables       Deliverable[]
+  activities         ActivityLog[]
+
+  @@index([clientId])
+  @@index([status])
+  @@index([targetDate])
+  @@map("projects")
+}
+
+model ProjectStage {
+  id                     String    @id @default(uuid())
+  projectId              String
+  name                   String
+  nameEn                 String
+  order                  Int
+  isCompleted            Boolean   @default(false)
+  completedAt            DateTime?
+  requiresClientApproval Boolean   @default(false)
+  description            String
+
+  project                Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([projectId, order])
+  @@map("project_stages")
+}
+
+// ---------------------------------------------------------------------------
+// Proposals & Estimates
+// ---------------------------------------------------------------------------
+
+model Proposal {
+  id              String         @id @default(uuid())
+  projectId       String
+  clientId        String
+  proposalNumber  String         @unique
+  title           String
+  subtotal        Decimal        @db.Decimal(12, 2)
+  taxAmount       Decimal        @db.Decimal(12, 2)
+  discountAmount  Decimal        @default(0) @db.Decimal(12, 2)
+  totalAmount     Decimal        @db.Decimal(12, 2)
+  currency        String         @default("SAR")
+  status          ProposalStatus @default(SENT)
+  validUntil      DateTime
+  terms           String
+  acceptedAt      DateTime?
+  rejectedAt      DateTime?
+  rejectionReason String?
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+
+  project         Project        @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  client          Client         @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  items           ProposalItem[]
+  invoices        Invoice[]
+
+  @@index([projectId])
+  @@index([clientId])
+  @@index([status])
+  @@index([validUntil])
+  @@map("proposals")
+}
+
+model ProposalItem {
+  id          String   @id @default(uuid())
+  proposalId  String
+  title       String
+  description String
+  quantity    Int      @default(1)
+  unitPrice   Decimal  @db.Decimal(12, 2)
+  total       Decimal  @db.Decimal(12, 2)
+
+  proposal    Proposal @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+
+  @@index([proposalId])
+  @@map("proposal_items")
+}
+
+// ---------------------------------------------------------------------------
+// Invoices & Payments
+// ---------------------------------------------------------------------------
+
+model Invoice {
+  id             String           @id @default(uuid())
+  projectId      String
+  clientId       String
+  proposalId     String?
+  invoiceNumber  String           @unique
+  issueDate      DateTime         @default(now())
+  dueDate        DateTime
+  status         InvoiceStatus    @default(ISSUED)
+  subtotal       Decimal          @db.Decimal(12, 2)
+  taxRate        Float            @default(15.0)
+  taxAmount      Decimal          @db.Decimal(12, 2)
+  discountAmount Decimal          @default(0) @db.Decimal(12, 2)
+  totalAmount    Decimal          @db.Decimal(12, 2)
+  paidAmount     Decimal          @default(0) @db.Decimal(12, 2)
+  balanceDue     Decimal          @db.Decimal(12, 2)
+  currency       String           @default("SAR")
+  notes          String?
+  bankName       String
+  accountName    String
+  iban           String
+  paidAt         DateTime?
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+
+  project        Project          @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  client         Client           @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  proposal       Proposal?        @relation(fields: [proposalId], references: [id], onDelete: SetNull)
+  items          InvoiceItem[]
+  payments       InvoicePayment[]
+
+  @@index([projectId])
+  @@index([clientId])
+  @@index([status])
+  @@index([dueDate])
+  @@map("invoices")
+}
+
+model InvoiceItem {
+  id          String   @id @default(uuid())
+  invoiceId   String
+  title       String
+  description String
+  quantity    Int      @default(1)
+  unitPrice   Decimal  @db.Decimal(12, 2)
+  total       Decimal  @db.Decimal(12, 2)
+
+  invoice     Invoice  @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+
+  @@index([invoiceId])
+  @@map("invoice_items")
+}
+
+model InvoicePayment {
+  id             String   @id @default(uuid())
+  invoiceId      String
+  amount         Decimal  @db.Decimal(12, 2)
+  paymentMethod  String   @default("تحويل بنكي")
+  transactionRef String?
+  notes          String?
+  paidAt         DateTime @default(now())
+  recordedBy     String   @default("النظام")
+
+  invoice        Invoice  @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+
+  @@index([invoiceId])
+  @@map("invoice_payments")
+}
+
+// ---------------------------------------------------------------------------
+// Legal & Agreements
+// ---------------------------------------------------------------------------
+
+model Agreement {
+  id              String          @id @default(uuid())
+  projectId       String
+  clientId        String
+  agreementNumber String          @unique
+  title           String
+  content         String
+  terms           String
+  status          AgreementStatus @default(DRAFT)
+  signedAt        DateTime?
+  signedByName    String?
+  clientIp        String?
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+
+  project         Project         @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  client          Client          @relation(fields: [clientId], references: [id], onDelete: Cascade)
+
+  @@index([projectId])
+  @@index([clientId])
+  @@index([status])
+  @@map("agreements")
+}
+
+// ---------------------------------------------------------------------------
+// Briefs & Intake Questionnaires
+// ---------------------------------------------------------------------------
+
+model BriefForm {
+  id             String            @id @default(uuid())
+  projectId      String
+  clientId       String
+  title          String
+  description    String
+  status         String            @default("draft") // draft, sent, completed
+  shareToken     String            @unique @default(uuid())
+  completionRate Int               @default(0)
+  submittedAt    DateTime?
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+
+  project        Project           @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  client         Client            @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  questions      BriefQuestion[]
+  submissions    BriefSubmission[]
+
+  @@index([projectId])
+  @@index([clientId])
+  @@index([shareToken])
+  @@map("brief_forms")
+}
+
+model BriefQuestion {
+  id           String    @id @default(uuid())
+  briefFormId  String
+  questionText String
+  category     String
+  responseType String    @default("textarea") // text, textarea, select, multi_select
+  required     Boolean   @default(true)
+  options      String?   // JSON string of options if select
+  sortOrder    Int       @default(0)
+
+  briefForm    BriefForm @relation(fields: [briefFormId], references: [id], onDelete: Cascade)
+
+  @@index([briefFormId, sortOrder])
+  @@map("brief_questions")
+}
+
+model BriefSubmission {
+  id               String    @id @default(uuid())
+  briefFormId      String
+  clientId         String
+  submittedByName  String
+  submittedByEmail String
+  answersJson      Json
+  submittedAt      DateTime  @default(now())
+
+  briefForm        BriefForm @relation(fields: [briefFormId], references: [id], onDelete: Cascade)
+  client           Client    @relation(fields: [clientId], references: [id], onDelete: Cascade)
+
+  @@index([briefFormId])
+  @@index([clientId])
+  @@map("brief_submissions")
+}
+
+// ---------------------------------------------------------------------------
+// Market Research & Strategic Direction
+// ---------------------------------------------------------------------------
+
+model ResearchWorkspace {
+  id                     String   @id @default(uuid())
+  projectId              String   @unique
+  projectSummary         String
+  marketContext          String
+  targetAudienceJson     Json
+  competitorAnalysisJson Json
+  strategicPositioning   String
+  brandArchetype         String
+  toneOfVoiceJson        Json
+  visualKeywords         String[]
+  createdAt              DateTime @default(now())
+  updatedAt              DateTime @updatedAt
+
+  project                Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@map("research_workspaces")
+}
+
+// ---------------------------------------------------------------------------
+// Visual Direction & Moodboards
+// ---------------------------------------------------------------------------
+
+model Moodboard {
+  id                 String    @id @default(uuid())
+  projectId          String
+  title              String
+  description        String
+  imageUrl           String
+  colorPaletteJson   Json
+  typographyJson     Json
+  isApprovedByClient Boolean   @default(false)
+  approvedAt         DateTime?
+  clientNotes        String?
+  createdAt          DateTime  @default(now())
+
+  project            Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([projectId])
+  @@map("moodboards")
+}
+
+// ---------------------------------------------------------------------------
+// Revisions & Feedback Cycles
+// ---------------------------------------------------------------------------
+
+model RevisionRequest {
+  id             String    @id @default(uuid())
+  projectId      String
+  roundNumber    Int
+  requestDate    DateTime  @default(now())
+  clientFeedback String
+  itemsRequested String[]
+  status         String    @default("pending") // pending, in_progress, completed
+  resolvedDate   DateTime?
+  designerNotes  String?
+
+  project        Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([projectId, roundNumber])
+  @@map("revision_requests")
+}
+
+// ---------------------------------------------------------------------------
+// Master Deliverables & Handover
+// ---------------------------------------------------------------------------
+
+model Deliverable {
+  id                String              @id @default(uuid())
+  projectId         String
+  title             String
+  category          DeliverableCategory
+  fileFormat        String
+  fileSizeMb        Float
+  downloadUrl       String
+  isPublicForClient Boolean             @default(true)
+  notes             String?
+  uploadedAt        DateTime            @default(now())
+
+  project           Project             @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([projectId, category])
+  @@map("deliverables")
+}
+
+// ---------------------------------------------------------------------------
+// Audit & Activity Logs
+// ---------------------------------------------------------------------------
+
+model ActivityLog {
+  id           String     @id @default(uuid())
+  userId       String?
+  projectId    String?
+  clientId     String?
+  action       String
+  actionType   ActionType @default(UPDATE)
+  description  String
+  actor        String     @default("النظام")
+  metadataJson Json?
+  createdAt    DateTime   @default(now())
+
+  user         User?      @relation(fields: [userId], references: [id], onDelete: SetNull)
+  project      Project?   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  client       Client?    @relation(fields: [clientId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([projectId])
+  @@index([clientId])
+  @@index([createdAt])
+  @@map("activity_logs")
+}
